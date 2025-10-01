@@ -15,7 +15,7 @@ export_creator <- function(url = "eu.kobotoolbox.org", uname = "", pwd = "",
                            assetid = "", type = "csv", all = "false", lang = "_default",
                            hierarchy = "false", include_grp = "true", grp_sep = "/", multi_sel = "both",
                            fields = NULL, media_url = "true", sub_ids = NULL,
-                           qry = NULL, flatten = "true", xls_typ_as_text = "false", sleep = 2) {
+                           qry = NULL, flatten = "true", xls_typ_as_text = "true", sleep = 2) {
 
   # Validate input parameters
   if (!is.character(url)) stop("URL entered is not a string")
