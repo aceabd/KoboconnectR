@@ -188,15 +188,17 @@ export_downloader <- function(exp.url, fsep, uname, pwd, sleep, type = "csv") {
         Sys.sleep(sleep)
 
      # Read all sheets from the Excel file, forcing all columns as text
-      dff <- purrr::map(
+        
+ dff <- purrr::map(
         rlang::set_names(readxl::excel_sheets(path)),
         ~ readxl::read_excel(path, sheet = .x, col_types = "text")
-      )
-    },
-    error = function(e) {
-      cat("Error: ", e$message, "\n")
-      return(NULL)
-    }
-  )
+      )      },
+      error = function(e) {
+        cat("Error: ", e$message, "\n")
+        return(NULL)
+      }
+    )
+  }
 
   return(dff)
+}
