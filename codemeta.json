@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "KoboconnectR",
   "description": "Wrapper for 'Kobotoolbox' APIs ver 2 mentioned at <https://support.kobotoolbox.org/api.html>, to download data from 'Kobotoolbox' to R. Small and simple package that adds immense convenience for the data professionals using 'Kobotoolbox'.",
-  "name": "KoboconnectR: Download Data from Kobotoolbox to R",
+  "name": "KoboconnectR: Download Data from Kobotoolbox to R (edited to import all as text)",
   "relatedLink": ["https://asitav-sen.github.io/KoboconnectR/", "https://CRAN.R-project.org/package=KoboconnectR"],
   "codeRepository": "https://github.com/asitav-sen/KoboconnectR",
   "issueTracker": "https://github.com/asitav-sen/koboconnectR/issues",
